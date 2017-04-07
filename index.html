@@ -1,39 +1,44 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amanda Pype and Matt York Wedding</title>
+  <link rel="stylesheet" href="public/css/app.css">
 </head>
 <body>
-  <div id="react-root"></div>
-  <script>
-
-  /**
-    Temporary front end router so we can use a single webpack dev server
-  */
-
-    function getQueryParams(qs) {
-        qs = qs.split('+').join(' ');
-
-        var params = {},
-            tokens,
-            re = /[?&]?([^=]+)=([^&]*)/g;
-
-        while (tokens = re.exec(qs)) {
-            params[decodeURIComponent(tokens[1])] = decodeURIComponent(tokens[2]);
-        }
-
-        return params;
-    }
-
-    var query = getQueryParams(document.location.search);
-
-    var script = document.createElement("script");
-    script.src = (query.bundle ? query.bundle+"/"+query.bundle : "frontend/frontend") + ".bundle.js";
-    document.body.appendChild(script);
-
-  </script>
-  <!-- <script src="frontend.bundle.js"></script> -->
+  <header id="splash">
+    <div class="color-overlay"></div>
+    <div class="header-description-container">
+      <h1>Amanda &amp; Matt</h1>
+      <p>
+        June 23rd - 25th, 2017<br> <a href="https://www.google.com/maps/d/viewer?ll=48.05936446436009%2C-123.791335613353&spn=0.328%2C0.727158&msa=0&iwloc=0004b44e9731c4b1030ec&mid=1Bo1sVEBElIE0Oo4msigJUnCl_PI&z=16">
+      Lake Crescent, Olympic National Park</a>
+      </p>
+    </div>
+  </header>
+  <section>
+    <h1>We're getting married!</h1>
+    <p>Come play with us starting 12:00pm, Friday, June 23rd through Sunday morning, June 25th</p>
+    <p>It will be three days of summer camp at <a href="https://naturebridge.org/olympic/weddings/your-wedding-weekend">NatureBridge</a>      on Lake Crescent. There will be games, canoes, fires, and frisbees.</p>
+    <p>
+      Free lodging is provided on site in dorm-style cabins. We would prefer it if you stayed in these cabins with us, but if rustic
+      doesn't suit you, you can reserve a room at <a href="http://www.olympicnationalparks.com/lodging/lake-crescent-lodge/">
+    Lake Crescent Lodge</a>. Book soon: it's a popular spot.
+    </p>
+    <p>
+      <strong>We will send RSVP instructions and more details soon.</strong>
+    </p>
+    <p>Email us with questions: <a href="mailto:questions@yorkpype.com">questions@yorkpype.com</a></p>
+  </section>
+  <footer class="footer-splash">
+  </footer>
+  <script src="public/js/jquery.js"></script>
+  <script src="public/js/what-input.js"></script>
+  <script src="public/js/foundation.js"></script>
+  <script src="public/js/app.js"></script>
 </body>
+
 </html>

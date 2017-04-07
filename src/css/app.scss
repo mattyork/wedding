@@ -1,0 +1,207 @@
+@import "foundation-settings";
+@import "foundation";
+
+@include foundation-everything;
+
+header#splash {
+  width: 100%;
+  height: 90%;
+  background-size: cover;
+  background-position: 53% 50%;
+  background-image: url("../img/splash.jpg");
+  position: relative;
+  a {
+    color: white;
+  }
+
+  .color-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(181,168,149,.1);
+  }
+  .header-description-container {
+    top: 43%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    position: relative;
+
+    @include breakpoint(small only)
+    {
+      font-size: 16px;
+    }
+  }
+
+  h1 {
+    font-weight: 200;
+    font-size: 70px;
+
+    @include breakpoint(small only)
+    {
+      font-size: 40px;
+    }
+  }
+}
+
+
+footer.footer-splash {
+  width: 100%;
+  height: 65%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("../img/footer-splash.jpg");
+  position: relative;
+}
+
+section {
+  padding: 7rem 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/** TODO: Get rid of this. Not needed. */
+// div#bar {
+//   display: none;
+//   height: $title-bar-height;
+//   width: 100%;
+//   background-color: #475B5E;
+//   position: relative;
+
+//   h2 {
+//     text-align: center;
+//     line-height: $title-bar-height;
+//     font-size: 16px;
+//     font-weight: 700;
+//     color: #212b2c;
+//   }
+
+//   $rsvp-expand: 1.5;
+
+//   #rsvp-container {
+//     position: relative;
+
+//     &, label {
+//       color: #4F4F4F;
+//     }
+
+//     @include breakpoint(small only)
+//     {
+//       width: 90%;
+//       left: 5%;
+//     }
+
+//     div#rsvp {
+//       width: 100%;
+//       box-shadow: 0px 0px 20px -10px black;
+//       position: absolute;
+//       top: -20px;
+//       background-color: white;
+//       border-radius: 5px;
+//       overflow: hidden;
+//     }
+//   }
+
+
+// }
+
+// #container {
+//   padding: 50px 0;
+//   padding-top: 120px;
+//   background-image: url("../img/dot.png");
+//   background-size: $dot-size;
+//   background-repeat: repeat-y;
+//   // The dots start 50px from the left hand side
+//   background-position: $left-dots-location 0;
+
+//   .section-header {
+
+//     margin-top: 0px;
+//     margin-bottom: 0px;
+
+//     .header-icon {
+//       height: $header-size;
+//       margin-left: $left-dots-location - ($header-size / 2) + ($dot-size / 2) - map-get($grid-column-gutter, medium)/2;
+
+//       @include breakpoint(small only)
+//       {
+//         height: $small-header-size;
+//         margin-left: $left-dots-location - ($small-header-size / 2) + ($dot-size / 2) - map-get($grid-column-gutter, small)/2;
+//       }
+//     }
+
+//     h1.header {
+//       vertical-align: middle;
+//       display: inline-block;
+//       line-height: $header-size;
+//       height: $header-size;
+//       margin: 0;
+//       margin-left: 20px;
+//       text-transform: uppercase;
+//       font-weight: 700;
+
+//       // text-decoration: underline;
+//     }
+//   }
+
+//   .section-content {
+//     padding-left: $left-dots-location + ($header-size / 2) + 20px;
+//     @include breakpoint(small only)
+//     {
+//       padding-left: $left-dots-location + ($small-header-size / 2) + 20px;
+//     }
+
+
+//     h2.header {
+//       // font-style: italic;
+//       // text-transform: uppercase;
+//       margin-bottom: 0;
+//     }
+
+//     ul {
+//       list-style-type: none;
+//       margin-left: 0;
+//       li {
+//         margin-bottom: 10px;
+//         h4 {
+//           margin-bottom: 0;
+//         }
+//       }
+//     }
+
+//     ul.sub {
+//       li {
+//         background: url('../img/food-icon.png') no-repeat left 5px ;
+//         background-size: 16px 16px;
+//         padding-left: 30px;
+//         &.bar {
+//           background-image: url('../img/drinks-icon.png');
+//         }
+//       }
+//     }
+
+//   }
+
+
+// }
+
+button {
+  outline: none;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: white;
+  color: rgb(55, 50, 45);
+}
+
+// a {
+//   color: white;
+// }
